@@ -1,0 +1,3 @@
+# 工作模式
+ENCODE = 'ENCODE'
+DECODE = 'DECODE'
