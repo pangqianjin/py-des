@@ -287,7 +287,7 @@ def decodeFiles(fileObj: dict, key: str = '0001001100110100010101110111100110011
             decodeFiles(child, key)
 
 
-def desEncode(pathname: str, key='0001001100110100010101110111100110011011101111001101111111110001'):
+def desEncode(pathname: str, key: str = '0001001100110100010101110111100110011011101111001101111111110001'):
     """
     传入一个文件路径或文件夹路径（当前目录中的路径），
     当前目录中会产生三个pathname.bak, pathname.dat, pathname.dir文件
@@ -301,7 +301,7 @@ def desEncode(pathname: str, key='0001001100110100010101110111100110011011101111
         f['obj'] = obj
 
 
-def desDecode(pathname:str, key:str='0001001100110100010101110111100110011011101111001101111111110001'):
+def desDecode(pathname: str, key: str = '0001001100110100010101110111100110011011101111001101111111110001'):
     """
     给一个.db文件，将它还原
     :param pathname: 给出.db文件的路径来解密
